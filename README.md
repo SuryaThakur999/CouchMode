@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/readme-banner.jpg" alt="beamOS: a Sony BRAVIA A1 and an XNANO X5 projector running the same clean home screen" width="100%" />
+  <img src="assets/readme-banner.jpg" alt="Projector 2030: a Sony BRAVIA A1 and an XNANO X5 projector running the same clean home screen" width="100%" />
 </p>
 
-<h1 align="center">beamOS</h1>
+<h1 align="center">Projector 2030</h1>
 <p align="center"><em>the home screen your TV and projector should have shipped with.</em></p>
 
 <h3 align="center">A Sony TV with twice the free memory, and a no-name projector that finally behaves like a TV.</h3>
@@ -19,11 +19,11 @@
   <a href="#how-it-works"><img alt="No root" src="https://img.shields.io/badge/root-not%20needed-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
 </p>
 
-<p align="center"><sub><a href="#support-beamos">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
+<p align="center"><sub><a href="#support-projector-2030">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
 
 ---
 
-## Support beamOS
+## Support Projector 2030
 
 <p align="center">
   Your TV got its speed back for free. If that saved you an evening of fiddling (or a new TV),<br>
@@ -33,7 +33,7 @@
 <p align="center">
   <a href="https://www.paypal.com/paypalme/SuryaThakur140"><img src="assets/btn-paypal.svg" alt="Buy me a coffee with PayPal" height="64"></a>
   &nbsp;
-  <a href="https://github.com/SuryaThakur999/beamOS-tv-projector-home/stargazers"><img src="assets/btn-star.svg" alt="Star beamOS on GitHub" height="64"></a>
+  <a href="https://github.com/SuryaThakur999/Projector-2030/stargazers"><img src="assets/btn-star.svg" alt="Star Projector 2030 on GitHub" height="64"></a>
 </p>
 
 ## What changed
@@ -49,7 +49,7 @@ The home screen itself uses about 56 MB. The stock Google TV launcher it replace
 
 Two honest things up front:
 
-- **Netflix quality on cheap projectors does not change.** Most no-name projectors ship with Widevine L3, which caps
+- **Netflix quality on most no-name projectors does not change.** Most no-name projectors ship with Widevine L3, which caps
   Netflix and other paid services at low resolution. No launcher or setting can fix that; it is in the hardware.
 - **Everything is reversible.** Apps are disabled, not deleted, and every list has a matching restore command.
 
@@ -59,7 +59,7 @@ You need a computer with `adb` on the same Wi-Fi as the TV, and USB debugging sw
 developer options. Accept the "Allow USB debugging?" prompt on the TV once.
 
 ```bash
-git clone https://github.com/SuryaThakur999/beamOS-tv-projector-home && cd beamOS-tv-projector-home
+git clone https://github.com/SuryaThakur999/Projector-2030 && cd Projector-2030
 
 # 1. back up, then disable the bloat for your device (or start from the closest example)
 TV_HOST=192.168.1.50 tools/disable.sh examples/sony-kd65a1/debloat.txt
@@ -79,7 +79,7 @@ The full walkthrough from the original project is in [docs/cleanyourtv-README.md
 
 Cheap Android projectors (Rockchip, Allwinner, Amlogic boards sold as XNANO, Magcubic and others) often run a
 **tablet** build of Android, not Android TV. Most launchers break on them: phone apps such as Netflix or Prime Video
-have no TV entry point, so they never appear. beamOS handles that:
+have no TV entry point, so they never appear. Projector 2030 handles that:
 
 - **Tablet builds detected automatically.** With no leanback feature present, the grid lists the normal app icons too.
 - **Dock apps always show.** An app you pin to the dock appears even if it only has a phone launcher entry.
@@ -91,7 +91,7 @@ have no TV entry point, so they never appear. beamOS handles that:
   stream the file through the shell instead.
 
 One projector quirk worth knowing: the XNANO stock launcher has the permission to change the default Home app, and the
-"Use beamOS as Home, Always" prompt keeps coming back while it is enabled. Disable it only after beamOS is installed:
+"Use Projector 2030 as Home, Always" prompt keeps coming back while it is enabled. Disable it only after Projector 2030 is installed:
 `adb shell pm disable-user --user 0 com.zhenhuo.elevenlauncher`.
 
 ## The home screen
@@ -156,15 +156,15 @@ tooling does the rest: back up the package list, disable telemetry, ad services 
 
 ## Credits
 
-beamOS builds on [**cleanyourtv**](https://github.com/Gathin23/cleanyourtv) by [Gathin](https://github.com/Gathin23):
-the original debloat tools, the device lists and the launcher this project extends. If beamOS helped, star the original too.
+Projector 2030 builds on [**cleanyourtv**](https://github.com/Gathin23/cleanyourtv) by [Gathin](https://github.com/Gathin23):
+the original debloat tools, the device lists and the launcher this project extends. If Projector 2030 helped, star the original too.
 
 This fork adds projector support, the brand tiles and focus motion, the screensaver fix, the light cue, the
 maintenance and recovery tools, and the Sony A1 and XNANO X5 lists.
 
 ## Disclaimer
 
-beamOS is an independent project. It is not affiliated with or endorsed by Apple, Sony, Netflix, Google or Govee.
+Projector 2030 is an independent project. It is not affiliated with or endorsed by Apple, Sony, Netflix, Google or Govee.
 Product names are used only to describe compatibility.
 
 ## License

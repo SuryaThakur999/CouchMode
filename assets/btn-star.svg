@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="Star beamOS on GitHub">
-  <title>Star beamOS on GitHub</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="Star Projector 2030 on GitHub">
+  <title>Star Projector 2030 on GitHub</title>
   <style>
     .star{animation:twinkle 2.6s ease-in-out infinite;transform-origin:62px 32px}
     @keyframes twinkle{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
