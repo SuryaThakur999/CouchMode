@@ -5,7 +5,7 @@
 <h1 align="center">Projector 2030</h1>
 <p align="center"><em>the home screen your TV and projector should have shipped with.</em></p>
 
-<h3 align="center">A Sony TV with twice the free memory, and a no-name projector that finally behaves like a TV.</h3>
+<h3 align="center">A Sony TV with twice the free memory, and a projector that finally behaves like a Hi-Tech 160 inch OLED TV Screen.</h3>
 
 <p align="center">
   Strip the bloat over Wi-Fi, swap the ad-filled home screen for an Apple TV-inspired one, and make it work
