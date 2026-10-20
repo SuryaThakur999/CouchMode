@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tvhome lights</string>
+    <string name="description">Flashes a Govee Bluetooth bulb Netflix red, then turns it off, when Netflix opens. Reads only which app is in front.</string>
+</resources>

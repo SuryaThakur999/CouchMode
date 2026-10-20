@@ -1,0 +1,32 @@
+# XNANO X5 projector (Rockchip RK3566, Android 11 tablet build, arm64, 2 GB RAM)
+# Disabled, not uninstalled. Re-enable any line with: adb shell pm enable <package>
+# Kept on purpose: keystone/focus (com.demo.keystonecorrection, com.yxt.keystonesetting), LED
+# (com.example.changeled, com.feng.marqueectrl), Miracast (com.rockchip.wfd), shell
+# service, Google voice search, Play Store, Google services,
+
+# factory test and demo
+com.DeviceTest
+com.android.app.cus.aging
+com.cghs.stresstest
+com.android.egg
+com.droidlogic.guide
+com.example.a
+
+# unused extras
+com.android.dreams.phototable
+com.android.music
+com.android.gallery3d
+com.android.rockchip.camera2
+com.android.deskclock
+com.android.wallpaper.livepicker
+com.google.android.feedback
+
+# media center (DLNA/USB player, unused)
+com.rockchips.mediacenter
+
+# maker app store (source of the unofficial Netflix app)
+com.yxt.appstore
+com.android.toofifi                          # built-in mirroring; blocks AirPlay Server port 7000
+
+# The stock launcher keeps resetting the Home choice; disable it only after tvhome is installed.
+# com.zhenhuo.elevenlauncher

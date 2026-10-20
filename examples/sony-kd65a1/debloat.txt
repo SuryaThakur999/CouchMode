@@ -1,0 +1,50 @@
+# Sony BRAVIA KD-65A1 (BRAVIA 4K GB), Android 9, armeabi-v7a, 2 GB RAM
+# Apply:   TV_HOST=<tv-ip> tools/disable.sh <this file>
+# Undo:    TV_HOST=<tv-ip> tools/restore.sh <this file>
+# Everything is DISABLED, not uninstalled. Delete or comment out any line to keep that app.
+#
+# Kept on purpose: voice (com.google.android.katniss, speech.pumpkin), Chromecast
+# (apps.mediashell), Google TV Remote (tv.remote.service), Alexa / smart home
+# (smarthomesettings, webapi.core), Bravia Sync / HDMI-CEC for PS5 and soundbar,
+# tuner and inputs, system update, and every app installed by the owner.
+
+# tracking / ads / viewing data
+tv.samba.ssm                                   # Samba TV, records what is on screen
+com.qterics.da.product                         # Sony usage analytics
+com.sony.dtv.da.service                        # Sony usage analytics
+com.sony.dtv.promos                            # promo banners
+com.sony.dtv.sonyselect                        # Sony Select app ads row
+com.sony.dtv.sonyselect.overlay
+com.google.android.feedback
+com.google.android.tv.bugreportsender
+com.sony.dtv.sonybugreportsys
+android.autoinstalls.config.sony.bravia        # pushes partner app installs
+
+# demo / shop mode
+com.sony.dtv.demomode
+com.sony.dtv.demosupport
+com.sony.dtv.multiscreendemo
+
+# help and manuals (all online anyway)
+com.sony.dtv.imanual
+com.sony.dtv.smarthelp
+com.sony.dtv.customersupport
+com.sony.dtv.bivlinfo
+
+# unused media extras
+com.sony.dtv.discovery                         # Discover row in Sony menu, 30 MB RAM
+com.sony.dtv.osat.music                        # Sony music player
+com.sony.dtv.smartmediaapp                     # Sony media player (USB playback still works in File Manager)
+com.google.android.videos                      # Google Play Movies, discontinued
+com.google.android.play.games
+com.google.android.youtube.tvmusic             # YouTube Music, you use Spotify
+com.google.android.backdrop                    # Ambient Mode screensaver photos
+com.sony.dtv.networkapp.wifidirect             # Wi-Fi Direct
+screnmirroring.com                             # Sony screen mirroring (Chromecast stays)
+com.sony.dtv.youview                           # UK YouView guide
+com.youview.tv.servicehost
+tv.titanos.channels                            # Titan OS free channels row
+
+# phase 2, only after the new launcher is installed and working
+# com.google.android.tvrecommendations
+# com.sony.dtv.tvlaunchercustomizer

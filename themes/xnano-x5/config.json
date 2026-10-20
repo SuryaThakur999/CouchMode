@@ -1,0 +1,19 @@
+{
+  "background_color": "#070A14",
+  "wallpaper": true,
+  "dock_apps": [
+    "com.netflix.mediaclient",
+    "com.google.android.youtube.tv",
+    "com.amazon.avod.thirdpartyclient",
+    "io.github.jqssun.airplay"
+  ],
+  "hidden_apps": [
+    "com.zhenhuo.elevenlauncher",
+    "com.android.camera2",
+    "com.rockchips.dlna",
+    "com.feng.marqueectrl",
+    "com.google.android.googlequicksearchbox",
+    "com.android.traceur"
+  ],
+  "columns": 4
+}
