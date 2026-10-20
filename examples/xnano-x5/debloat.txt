@@ -28,5 +28,4 @@ com.rockchips.mediacenter
 com.yxt.appstore
 com.android.toofifi                          # built-in mirroring; blocks AirPlay Server port 7000
 
-# The stock launcher keeps resetting the Home choice; disable it only after tvhome is installed.
-# com.zhenhuo.elevenlauncher
+# Never disable com.zhenhuo.elevenlauncher (the stock launcher): with it disabled the X5 hung on the boot logo.

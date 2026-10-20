@@ -90,9 +90,10 @@ have no TV entry point, so they never appear. Projector 2030 handles that:
 - **Themes push on Android 11+.** `adb push` into `Android/data` fails there (`fchown` is not permitted), so the tools
   stream the file through the shell instead.
 
-One projector quirk worth knowing: the XNANO stock launcher has the permission to change the default Home app, and the
-"Use Projector 2030 as Home, Always" prompt keeps coming back while it is enabled. Disable it only after Projector 2030 is installed:
-`adb shell pm disable-user --user 0 com.zhenhuo.elevenlauncher`.
+**Do not disable the projector's stock launcher.** On the XNANO X5 it keeps showing the "Use as Home, Always" prompt,
+but with it disabled the projector stopped finishing its boot and hung on the Android logo, and network ADB (which starts
+only after boot) could not reach it to undo the change. Leave the stock launcher enabled and pick Projector 2030 in the
+Home prompt instead.
 
 ## The home screen
 
