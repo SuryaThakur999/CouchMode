@@ -5,11 +5,11 @@
 <h1 align="center">tvhome</h1>
 <p align="center"><em>your slow TV, rebuilt.</em></p>
 
-<h3 align="center">A 2017 Sony and a no-name projector, both quicker than the day they came out of the box.</h3>
+<h3 align="center">A Sony TV and a no-name projector, both quicker than the day they came out of the box.</h3>
 
 <p align="center">
   Strip the bloat over Wi-Fi, swap the ad-filled home screen for an Apple TV style one, and make it work
-  on cheap Android projectors that ship with a tablet build. No root, nothing uninstalled, one line to undo.
+  on Android projectors that ship with a tablet build. No root, nothing uninstalled, one line to undo.
 </p>
 
 <p align="center">
