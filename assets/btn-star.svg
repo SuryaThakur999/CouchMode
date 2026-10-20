@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="Star beamOS on GitHub">
+  <title>Star beamOS on GitHub</title>
+  <style>
+    .star{animation:twinkle 2.6s ease-in-out infinite;transform-origin:62px 32px}
+    @keyframes twinkle{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+    @media (prefers-reduced-motion:reduce){.star{animation:none}}
+  </style>
+  <rect x="8" y="8" width="284" height="48" rx="24" fill="#0a0a0a" stroke="#ff2d2d" stroke-width="2"/>
+  <text class="star" x="62" y="39" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="20" fill="#ffd60a">★</text>
+  <text x="166" y="39" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#fff">Star it · free and fast</text>
+</svg>

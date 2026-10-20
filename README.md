@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="assets/readme-banner.jpg" alt="tvhome: a Sony BRAVIA A1 and an XNANO X5 projector running the same clean home screen" width="100%" />
+  <img src="assets/readme-banner.jpg" alt="beamOS: a Sony BRAVIA A1 and an XNANO X5 projector running the same clean home screen" width="100%" />
 </p>
 
-<h1 align="center">tvhome</h1>
-<p align="center"><em>your slow TV, rebuilt.</em></p>
+<h1 align="center">beamOS</h1>
+<p align="center"><em>the home screen your TV and projector should have shipped with.</em></p>
 
-<h3 align="center">A Sony TV and a no-name projector, both quicker than the day they came out of the box.</h3>
+<h3 align="center">A Sony TV with twice the free memory, and a no-name projector that finally behaves like a TV.</h3>
 
 <p align="center">
-  Strip the bloat over Wi-Fi, swap the ad-filled home screen for an Apple TV style one, and make it work
+  Strip the bloat over Wi-Fi, swap the ad-filled home screen for an Apple TV-inspired one, and make it work
   on Android projectors that ship with a tablet build. No root, nothing uninstalled, one line to undo.
 </p>
 
@@ -19,9 +19,22 @@
   <a href="#how-it-works"><img alt="No root" src="https://img.shields.io/badge/root-not%20needed-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
 </p>
 
-<p align="center"><sub><a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
+<p align="center"><sub><a href="#support-beamos">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
 
 ---
+
+## Support beamOS
+
+<p align="center">
+  Your TV got its speed back for free. If that saved you an evening of fiddling (or a new TV),<br>
+  a coffee keeps new device lists and projector fixes coming. Starring the repo helps the next person find it.
+</p>
+
+<p align="center">
+  <a href="https://www.paypal.com/paypalme/SuryaThakur140"><img src="assets/btn-paypal.svg" alt="Buy me a coffee with PayPal" height="64"></a>
+  &nbsp;
+  <a href="https://github.com/SuryaThakur999/beamOS-tv-projector-home/stargazers"><img src="assets/btn-star.svg" alt="Star beamOS on GitHub" height="64"></a>
+</p>
 
 ## What changed
 
@@ -46,7 +59,7 @@ You need a computer with `adb` on the same Wi-Fi as the TV, and USB debugging sw
 developer options. Accept the "Allow USB debugging?" prompt on the TV once.
 
 ```bash
-git clone https://github.com/SuryaThakur999/tvhome && cd tvhome
+git clone https://github.com/SuryaThakur999/beamOS-tv-projector-home && cd beamOS-tv-projector-home
 
 # 1. back up, then disable the bloat for your device (or start from the closest example)
 TV_HOST=192.168.1.50 tools/disable.sh examples/sony-kd65a1/debloat.txt
@@ -58,7 +71,7 @@ TV_HOST=192.168.1.50 launcher/build-and-install.sh
 TV_HOST=192.168.1.50 tools/restore.sh examples/sony-kd65a1/debloat.txt
 ```
 
-There are 30+ device lists in [`examples/`](examples/) from the original project, plus two new ones:
+Tested on Android 9 (Sony A1) and Android 11 (XNANO X5). There are 30+ device lists in [`examples/`](examples/) from the original project, plus two new ones:
 [`sony-kd65a1`](examples/sony-kd65a1/debloat.txt) and [`xnano-x5`](examples/xnano-x5/debloat.txt).
 The full walkthrough from the original project is in [docs/cleanyourtv-README.md](docs/cleanyourtv-README.md).
 
@@ -66,7 +79,7 @@ The full walkthrough from the original project is in [docs/cleanyourtv-README.md
 
 Cheap Android projectors (Rockchip, Allwinner, Amlogic boards sold as XNANO, Magcubic and others) often run a
 **tablet** build of Android, not Android TV. Most launchers break on them: phone apps such as Netflix or Prime Video
-have no TV entry point, so they never appear. tvhome handles that:
+have no TV entry point, so they never appear. beamOS handles that:
 
 - **Tablet builds detected automatically.** With no leanback feature present, the grid lists the normal app icons too.
 - **Dock apps always show.** An app you pin to the dock appears even if it only has a phone launcher entry.
@@ -77,13 +90,13 @@ have no TV entry point, so they never appear. tvhome handles that:
 - **Themes push on Android 11+.** `adb push` into `Android/data` fails there (`fchown` is not permitted), so the tools
   stream the file through the shell instead.
 
-One projector quirk worth knowing: the XNANO stock launcher holds the permission to reset your Home choice, so the
-"Use tvhome as Home, Always" prompt keeps coming back. Disable it only after tvhome is installed:
+One projector quirk worth knowing: the XNANO stock launcher has the permission to change the default Home app, and the
+"Use beamOS as Home, Always" prompt keeps coming back while it is enabled. Disable it only after beamOS is installed:
 `adb shell pm disable-user --user 0 com.zhenhuo.elevenlauncher`.
 
 ## The home screen
 
-The launcher follows Apple's tvOS home screen and Apple's own motion guidance:
+The launcher is Apple TV-inspired and follows Apple's published motion guidance:
 
 - **5:3 tiles**, the Apple TV app icon proportion, four to a row by default.
 - **Focus that lifts.** The focused tile grows 1.12x and rises on a soft shadow, eases out over 200 ms and settles
@@ -100,7 +113,7 @@ Change the dock, columns or wallpaper without rebuilding: edit a theme in [`them
 when Netflix opens, so the room goes dark as the film starts.
 
 - **No Wi-Fi, no Govee account, no pairing.** It finds the nearest Govee bulb by its Bluetooth name on first start.
-- **Fast.** It holds one standing Bluetooth link, so the light reacts about half a second after Netflix opens.
+- **Fast.** It holds one standing Bluetooth link; in our test on a Sony A1 the light reacted about half a second after Netflix opened.
 - **Light on the TV.** About 3 MB of RAM and no CPU while idle; it only wakes when the app in front changes.
 
 Tested with a Govee H6008 bulb from a Sony A1. The colour command differs between Govee models, so other bulbs may
@@ -111,7 +124,11 @@ control that one bulb.
 cd lights && ./gradlew assembleRelease
 adb install -r app/build/outputs/apk/release/app-release.apk
 adb shell pm grant io.github.tvhome.lights android.permission.ACCESS_FINE_LOCATION
-adb shell settings put secure enabled_accessibility_services io.github.tvhome.lights/io.github.tvhome.lights.LightsService
+# add the service without switching off other accessibility services (TalkBack and similar)
+cur=$(adb shell settings get secure enabled_accessibility_services | tr -d '\r')
+new=io.github.tvhome.lights/io.github.tvhome.lights.LightsService
+[ "$cur" = "null" ] || [ -z "$cur" ] || new="$cur:$new"
+adb shell settings put secure enabled_accessibility_services "$new"
 adb shell settings put secure accessibility_enabled 1
 ```
 
@@ -139,11 +156,16 @@ tooling does the rest: back up the package list, disable telemetry, ad services 
 
 ## Credits
 
-tvhome builds on [**cleanyourtv**](https://github.com/Gathin23/cleanyourtv) by [Gathin](https://github.com/Gathin23):
-the original debloat tools, the device lists and the launcher this project extends. Go star it.
+beamOS builds on [**cleanyourtv**](https://github.com/Gathin23/cleanyourtv) by [Gathin](https://github.com/Gathin23):
+the original debloat tools, the device lists and the launcher this project extends. If beamOS helped, star the original too.
 
 This fork adds projector support, the brand tiles and focus motion, the screensaver fix, the light cue, the
 maintenance and recovery tools, and the Sony A1 and XNANO X5 lists.
+
+## Disclaimer
+
+beamOS is an independent project. It is not affiliated with or endorsed by Apple, Sony, Netflix, Google or Govee.
+Product names are used only to describe compatibility.
 
 ## License
 

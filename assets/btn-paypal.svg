@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="Buy me a coffee with PayPal">
+  <title>Buy me a coffee with PayPal</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff2d2d"/><stop offset="1" stop-color="#ff5a1f"/></linearGradient>
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+    <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <clipPath id="c"><rect x="8" y="8" width="284" height="48" rx="24"/></clipPath>
+  </defs>
+  <style>
+    .halo{animation:pulse 2.6s ease-in-out infinite;transform-origin:150px 32px}
+    .sweep{animation:sweep 3.2s cubic-bezier(.23,1,.32,1) infinite}
+    @keyframes pulse{0%,100%{opacity:.35;transform:scale(.96)}50%{opacity:.8;transform:scale(1.02)}}
+    @keyframes sweep{0%{transform:translateX(-120px)}60%,100%{transform:translateX(320px)}}
+    @media (prefers-reduced-motion:reduce){.halo,.sweep{animation:none}}
+  </style>
+  <rect class="halo" x="8" y="8" width="284" height="48" rx="24" fill="#ff2d2d" filter="url(#glow)"/>
+  <rect x="8" y="8" width="284" height="48" rx="24" fill="url(#g)"/>
+  <g clip-path="url(#c)"><rect class="sweep" x="0" y="8" width="80" height="48" fill="url(#shine)"/></g>
+  <text x="150" y="39" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#fff">☕  Buy me a coffee · PayPal</text>
+</svg>
