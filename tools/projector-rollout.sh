@@ -32,7 +32,7 @@ while [ $SECONDS -lt $end ]; do
     case "$s" in *HomeKeyService*) ;; null|'') s=$SVC ;; *) s="$s:$SVC" ;; esac
     $D settings put secure enabled_accessibility_services "''"; $D settings put secure accessibility_enabled 0; sleep 1
     $D settings put secure enabled_accessibility_services "$s"; $D settings put secure accessibility_enabled 1
-    [ -n "$PSRP" ] || PSRP=$(ls -t ~/Downloads/*[Rr]emote*[Pp]lay*.apk ~/Downloads/*playstation*.apk 2>/dev/null | head -1)
+    if [ -z "$PSRP" ]; then psrp_found=(~/Downloads/*[Rr]emote*[Pp]lay*.apk(N.om) ~/Downloads/*playstation*.apk(N.om)); PSRP=${psrp_found[1]}; fi
     if [ -n "$PSRP" ] && [ -f "$PSRP" ]; then
       BT=$(ls -d /opt/homebrew/share/android-commandlinetools/build-tools/* | tail -1)
       cert=$(JAVA_HOME=/opt/homebrew/opt/openjdk@17 $BT/apksigner verify --print-certs "$PSRP" 2>/dev/null | grep -m1 'certificate DN')
