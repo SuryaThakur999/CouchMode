@@ -32,7 +32,13 @@ while [ $SECONDS -lt $end ]; do
     case "$s" in *HomeKeyService*) ;; null|'') s=$SVC ;; *) s="$s:$SVC" ;; esac
     $D settings put secure enabled_accessibility_services "''"; $D settings put secure accessibility_enabled 0; sleep 1
     $D settings put secure enabled_accessibility_services "$s"; $D settings put secure accessibility_enabled 1
-    if [ -n "$PSRP" ] && [ -f "$PSRP" ]; then adb -s $dev install -r "$PSRP" | tee -a $L; fi
+    [ -n "$PSRP" ] || PSRP=$(ls -t ~/Downloads/*[Rr]emote*[Pp]lay*.apk ~/Downloads/*playstation*.apk 2>/dev/null | head -1)
+    if [ -n "$PSRP" ] && [ -f "$PSRP" ]; then
+      BT=$(ls -d /opt/homebrew/share/android-commandlinetools/build-tools/* | tail -1)
+      cert=$(JAVA_HOME=/opt/homebrew/opt/openjdk@17 $BT/apksigner verify --print-certs "$PSRP" 2>/dev/null | grep -m1 'certificate DN')
+      log "PS Remote Play $PSRP: $cert"
+      case "$cert" in *Sony*|*SONY*|*PlayStation*) adb -s $dev install -r "$PSRP" | tee -a $L ;; *) log "PS Remote Play NOT installed: signer is not Sony" ;; esac
+    else log "PS Remote Play file not found; skipped"; fi
     sleep 35
     $D input keyevent KEYCODE_HOME; sleep 4
     log "after HOME: $($D dumpsys activity activities | grep -m1 mResumedActivity | sed -E 's/.* u0 ([^ ]+).*/\1/')"
