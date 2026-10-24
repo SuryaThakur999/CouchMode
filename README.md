@@ -1,34 +1,34 @@
 <p align="center">
-  <img src="assets/readme-banner.jpg" alt="CouchMode: an AI agent sets up a Sony BRAVIA A1 and an XNANO X5 projector over Wi-Fi" width="100%" />
+  <img src="assets/readme-banner.jpg" alt="CouchMode: Claude sets up a Sony BRAVIA A1 and an XNANO X5 projector over Wi-Fi" width="100%" />
 </p>
 
 <h1 align="center">CouchMode</h1>
 <p align="center"><em>paste one prompt, get a home cinema.</em></p>
 
-<h3 align="center">Your AI agent sets up your TV, projector and PS5 over Wi-Fi. You stay on the couch.</h3>
+<h3 align="center">Claude sets up your TV, projector and PS5 over Wi-Fi. You stay on the couch.</h3>
 
 <p align="center">
-  Open Claude Code or Codex, paste the prompt below, and it strips the bloat, installs an Apple TV-inspired home screen,
+  Open Claude Code, paste the prompt below, and it strips the bloat, installs an Apple TV-inspired home screen,
   fixes the quirks of cheap Android projectors and puts your PS5 on the wall. No root, no HDMI cable across the room,
   nothing uninstalled, one line to undo.
 </p>
 
 <p align="center">
-  <a href="#let-your-ai-do-it"><img alt="AI agent ready" src="https://img.shields.io/badge/AI%20agent-ready-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
+  <a href="#let-claude-do-it"><img alt="Claude ready" src="https://img.shields.io/badge/Claude-ready-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
   <a href="#quick-start"><img alt="Android 8 and up" src="https://img.shields.io/badge/android-8%2B-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
   <a href="#ps5-on-the-wall"><img alt="PS5 over Wi-Fi" src="https://img.shields.io/badge/PS5-over%20Wi--Fi-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
   <a href="#how-it-works"><img alt="No root" src="https://img.shields.io/badge/root-not%20needed-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
 </p>
 
-<p align="center"><sub><a href="#let-your-ai-do-it">Let your AI do it</a> · <a href="#support-couchmode">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#ps5-on-the-wall">PS5</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
+<p align="center"><sub><a href="#let-claude-do-it">Let Claude do it</a> · <a href="#support-couchmode">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#ps5-on-the-wall">PS5</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
 
 ---
 
-## Let your AI do it
+## Let Claude do it
 
 You do not need to know what ADB is. Turn on developer options and USB debugging on the TV or projector once
-(Settings, About, press Build seven times), make sure your computer is on the same Wi-Fi, then give your coding agent this:
+(Settings, About, press Build seven times), make sure your computer is on the same Wi-Fi, then give Claude this:
 
 ```text
 Clone https://github.com/SuryaThakur999/CouchMode and read README.md and docs/RECOVERY.md first.
@@ -38,7 +38,7 @@ Follow the warnings in the README exactly: never disable a projector's stock lau
 after any package change before rebooting, and ask me before adding or removing any app.
 ```
 
-The agent does the clicking and the commands; you approve each step. The warnings in that prompt are there because
+Claude does the clicking and the commands; you approve each step. The warnings in that prompt are there because
 we hit each of those problems on a real projector, and the [recovery guide](docs/RECOVERY.md) shows how we got out.
 
 ## Support CouchMode
@@ -208,7 +208,7 @@ maintenance and recovery tools, and the Sony A1 and XNANO X5 lists.
 
 ## Disclaimer
 
-CouchMode is an independent project. It is not affiliated with or endorsed by Apple, Sony, PlayStation, Rockstar Games, Netflix, Google, Anthropic, OpenAI or Govee.
+CouchMode is an independent project. It is not affiliated with or endorsed by Apple, Sony, PlayStation, Rockstar Games, Netflix, Google, Anthropic or Govee.
 Product names are used only to describe compatibility.
 
 ## License
