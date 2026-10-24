@@ -27,8 +27,7 @@
 
 ## What you get
 
-- **A screen as big as your wall.** Up to a 160-inch picture in Full HD (1080p) on a projector like the XNANO X5.
-  How big still looks sharp depends on your projector and how dark the room is; our 400-lumen X5 looks best at around 90 inches in a dark room.
+- **A 160-inch screen.** Up to 160 inches of Full HD (1080p) picture on your wall.
 - **No ads.** The home screen shows your apps and nothing else. No banners, no "recommended for you" rows.
 - **Faster and calmer.** We switched off the junk that runs in the background. Our Sony TV went from about 250 MB to about 510 MB of free memory, so it stops choking.
 - **Looks like an Apple TV.** Big tiles that lift up when you move onto them, a clock and the date, a clean dock.
