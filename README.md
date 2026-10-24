@@ -123,6 +123,12 @@ if the boot check fails.
 Ready for GTA VI night without running an HDMI cable across the room: your PS5 stays plugged into the TV and streams to
 the projector over Wi-Fi with Remote Play.
 
+<p align="center">
+  <img src="assets/ps5-fc-projector.jpg" alt="EA Sports FC streamed from a PS5 to the XNANO X5 projector" width="49%" />
+  <img src="assets/ps5-nfs-projector.jpg" alt="Need for Speed Heat streamed from a PS5 to the XNANO X5 projector, with Chiaki's on-screen buttons visible" width="49%" />
+</p>
+<p align="center"><sub>Captured on the X5 itself while we played, PS5 streaming over a phone hotspot. The faint buttons on the right shot are Chiaki's touch overlay.</sub></p>
+
 - **App.** Sony's PS Remote Play app may not run on no-name projectors (on the X5 it crashed in the projector's keystore
   check). The open-source Chiaki client works: register it once with your PSN account ID and the PIN from the PS5.
 - **Settings that worked on the X5.** 1080p, 60 fps, H264, bitrate 15000 to 30000. Pair a DualSense in Bluetooth
