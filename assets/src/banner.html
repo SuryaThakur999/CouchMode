@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=block" rel="stylesheet">
+<style>
+  :root { --bg:#0a0a0a; --red:#ff2d2d; --orange:#ff4500; --ink:#f5f5f5; --mute:#a8a8a8; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1600px; height:640px; background:var(--bg); overflow:hidden; font-family:'Outfit', sans-serif; color:var(--ink); }
+  .stage { position:relative; width:1600px; height:640px;
+    background:
+      radial-gradient(900px 520px at 88% 40%, rgba(255,45,45,.30), transparent 60%),
+      radial-gradient(500px 400px at 60% 110%, rgba(255,69,0,.18), transparent 70%),
+      linear-gradient(90deg, #050505 0%, #0a0a0a 45%, #1a0505 100%); }
+  .copy { position:absolute; left:96px; top:92px; width:700px; }
+  .eyebrow { font-family:'JetBrains Mono', monospace; font-size:17px; letter-spacing:.14em; color:var(--orange); text-transform:uppercase; }
+  h1 { font-size:132px; font-weight:800; line-height:.95; letter-spacing:-.035em; margin-top:18px; }
+  h1 span { color:var(--red); }
+  .sub { font-size:29px; font-weight:400; line-height:1.32; color:#e6e6e6; margin-top:22px; letter-spacing:-.005em; }
+  .prompt { margin-top:30px; display:inline-flex; align-items:center; gap:14px; padding:16px 22px;
+    border:1px solid rgba(255,255,255,.14); border-radius:14px; background:rgba(255,255,255,.05);
+    font-family:'JetBrains Mono', monospace; font-size:19px; color:#ededed;
+    box-shadow:0 18px 40px rgba(0,0,0,.55); }
+  .prompt .caret { color:var(--red); font-weight:600; }
+  .prompt .cursor { display:inline-block; width:10px; height:22px; background:var(--red); margin-left:2px; vertical-align:-4px; }
+  .tags { position:absolute; left:96px; bottom:52px; font-size:17px; letter-spacing:.06em; color:var(--mute); text-transform:uppercase; }
+  .tags b { color:#cfcfcf; font-weight:600; }
+  .shot { position:absolute; border-radius:16px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.08); }
+  .shot img { display:block; width:100%; }
+  .s1 { left:1000px; top:40px; width:560px; transform:rotate(-1.2deg); }
+  .s2 { left:880px; top:362px; width:500px; }
+  .label { position:absolute; font-size:16px; letter-spacing:.04em; color:#bdbdbd; }
+  .l1 { left:1012px; top:330px; } .l2 { left:886px; top:612px; }
+  .chip { position:absolute; left:1396px; top:462px; white-space:nowrap; display:flex; align-items:center; gap:8px; padding:11px 15px;
+    border-radius:999px; background:linear-gradient(90deg, #c81414, #b03200); color:#fff;
+    font-weight:600; font-size:17px; box-shadow:0 14px 34px rgba(0,0,0,.6); }
+  .chip svg { width:26px; height:26px; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="copy">
+    <div class="eyebrow">AI-set-up home cinema</div>
+    <h1>Couch<span>Mode</span></h1>
+    <p class="sub">Paste one prompt. Your AI agent sets up your TV, projector and PS5 over Wi-Fi.</p>
+    <div class="prompt"><span class="caret">&gt;</span>turn my projector into a cinema<span class="cursor"></span></div>
+  </div>
+  <div class="tags"><b>Claude Code</b> · <b>Codex</b> · Android TV · Projectors · PS5 · No root</div>
+
+  <div class="shot s1"><img src="../projector-home.jpg" alt=""></div>
+  <div class="label l1">projector · XNANO X5</div>
+  <div class="shot s2"><img src="../sony-a1-home.jpg" alt=""></div>
+  <div class="label l2">TV · Sony BRAVIA A1</div>
+
+  <div class="chip">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9h12a4 4 0 0 1 3.9 4.9l-.8 3.4a2.2 2.2 0 0 1-3.9.8L15.5 16h-7l-1.7 2.1a2.2 2.2 0 0 1-3.9-.8l-.8-3.4A4 4 0 0 1 6 9Z"/><path d="M8 12v3M6.5 13.5h3"/><circle cx="16" cy="12.5" r=".6" fill="#fff"/><circle cx="17.8" cy="14.3" r=".6" fill="#fff"/></svg>
+    PS5 on the wall
+  </div>
+</div>
+</body>
+</html>

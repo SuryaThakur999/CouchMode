@@ -1,29 +1,47 @@
 <p align="center">
-  <img src="assets/readme-banner.jpg" alt="Projector 2030: a Sony BRAVIA A1 and an XNANO X5 projector running the same clean home screen" width="100%" />
+  <img src="assets/readme-banner.jpg" alt="CouchMode: an AI agent sets up a Sony BRAVIA A1 and an XNANO X5 projector over Wi-Fi" width="100%" />
 </p>
 
-<h1 align="center">Projector 2030</h1>
-<p align="center"><em>the home screen your TV and projector should have shipped with.</em></p>
+<h1 align="center">CouchMode</h1>
+<p align="center"><em>paste one prompt, get a home cinema.</em></p>
 
-<h3 align="center">A Sony TV with twice the free memory, and a projector that finally behaves like a Hi-Tech 160 inch OLED TV Screen.</h3>
+<h3 align="center">Your AI agent sets up your TV, projector and PS5 over Wi-Fi. You stay on the couch.</h3>
 
 <p align="center">
-  Strip the bloat over Wi-Fi, swap the ad-filled home screen for an Apple TV-inspired one, and make it work
-  on Android projectors that ship with a tablet build. No root, nothing uninstalled, one line to undo.
+  Open Claude Code or Codex, paste the prompt below, and it strips the bloat, installs an Apple TV-inspired home screen,
+  fixes the quirks of cheap Android projectors and puts your PS5 on the wall. No root, no HDMI cable across the room,
+  nothing uninstalled, one line to undo.
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
-  <a href="#quick-start"><img alt="Android 8 and up" src="https://img.shields.io/badge/android-8%2B-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
-  <a href="#projectors"><img alt="TV and projector" src="https://img.shields.io/badge/TV%20%2B%20projector-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
-  <a href="#how-it-works"><img alt="No root" src="https://img.shields.io/badge/root-not%20needed-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
+  <a href="#let-your-ai-do-it"><img alt="AI agent ready" src="https://img.shields.io/badge/AI%20agent-ready-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
+  <a href="#quick-start"><img alt="Android 8 and up" src="https://img.shields.io/badge/android-8%2B-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
+  <a href="#ps5-on-the-wall"><img alt="PS5 over Wi-Fi" src="https://img.shields.io/badge/PS5-over%20Wi--Fi-ff4500?style=for-the-badge&labelColor=0a0a0a"></a>
+  <a href="#how-it-works"><img alt="No root" src="https://img.shields.io/badge/root-not%20needed-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
 </p>
 
-<p align="center"><sub><a href="#support-projector-2030">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
+<p align="center"><sub><a href="#let-your-ai-do-it">Let your AI do it</a> · <a href="#support-couchmode">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#ps5-on-the-wall">PS5</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
 
 ---
 
-## Support Projector 2030
+## Let your AI do it
+
+You do not need to know what ADB is. Turn on developer options and USB debugging on the TV or projector once
+(Settings, About, press Build seven times), make sure your computer is on the same Wi-Fi, then give your coding agent this:
+
+```text
+Clone https://github.com/SuryaThakur999/CouchMode and read README.md and docs/RECOVERY.md first.
+My TV/projector is on my Wi-Fi with debugging on. Find it with `adb mdns services`, check the model,
+back it up, disable the bloat from the closest list in examples/, install the launcher and set it up.
+Follow the warnings in the README exactly: never disable a projector's stock launcher, wait 30 seconds
+after any package change before rebooting, and ask me before adding or removing any app.
+```
+
+The agent does the clicking and the commands; you approve each step. The warnings in that prompt are there because
+we hit each of those problems on a real projector, and the [recovery guide](docs/RECOVERY.md) shows how we got out.
+
+## Support CouchMode
 
 <p align="center">
   Your TV got its speed back for free. If that saved you an evening of fiddling (or a new TV),<br>
@@ -33,7 +51,7 @@
 <p align="center">
   <a href="https://www.paypal.com/paypalme/SuryaThakur140"><img src="assets/btn-paypal.svg" alt="Buy me a coffee with PayPal" height="64"></a>
   &nbsp;
-  <a href="https://github.com/SuryaThakur999/Projector-2030/stargazers"><img src="assets/btn-star.svg" alt="Star Projector 2030 on GitHub" height="64"></a>
+  <a href="https://github.com/SuryaThakur999/CouchMode/stargazers"><img src="assets/btn-star.svg" alt="Star CouchMode on GitHub" height="64"></a>
 </p>
 
 ## What changed
@@ -59,7 +77,7 @@ You need a computer with `adb` on the same Wi-Fi as the TV, and USB debugging sw
 developer options. Accept the "Allow USB debugging?" prompt on the TV once.
 
 ```bash
-git clone https://github.com/SuryaThakur999/Projector-2030 && cd Projector-2030
+git clone https://github.com/SuryaThakur999/CouchMode && cd CouchMode
 
 # 1. back up, then disable the bloat for your device (or start from the closest example)
 TV_HOST=192.168.1.50 tools/disable.sh examples/sony-kd65a1/debloat.txt
@@ -79,7 +97,7 @@ The full walkthrough from the original project is in [docs/cleanyourtv-README.md
 
 Cheap Android projectors (Rockchip, Allwinner, Amlogic boards sold as XNANO, Magcubic and others) often run a
 **tablet** build of Android, not Android TV. Most launchers break on them: phone apps such as Netflix or Prime Video
-have no TV entry point, so they never appear. Projector 2030 handles that:
+have no TV entry point, so they never appear. CouchMode handles that:
 
 - **Tablet builds detected automatically.** With no leanback feature present, the grid lists the normal app icons too.
 - **Dock apps always show.** An app you pin to the dock appears even if it only has a phone launcher entry.
@@ -90,10 +108,29 @@ have no TV entry point, so they never appear. Projector 2030 handles that:
 - **Themes push on Android 11+.** `adb push` into `Android/data` fails there (`fchown` is not permitted), so the tools
   stream the file through the shell instead.
 
-**Do not disable the projector's stock launcher.** On the XNANO X5 it keeps showing the "Use as Home, Always" prompt,
-but with it disabled the projector stopped finishing its boot and hung on the Android logo, and network ADB (which starts
-only after boot) could not reach it to undo the change. Leave the stock launcher enabled and pick Projector 2030 in the
-Home prompt instead.
+**Do not disable the projector's stock launcher, and do not make CouchMode the "Always" Home app.** On the XNANO X5
+both left the projector hanging on the Android logo: at boot the storage is still locked, a non-system launcher cannot
+start yet, and Android retries it forever. Network ADB comes up over a LAN cable even then, which is how we recovered it
+([docs/RECOVERY.md](docs/RECOVERY.md)).
+
+The projector build avoids this completely. It is built with `-PhomeCategory=android.intent.category.DEFAULT`, so it
+never registers as a Home app; the stock launcher stays the real Home, and an accessibility service sends Home presses
+and boot straight to CouchMode. `tools/projector-rollout.sh` installs it with a monitored reboot and rolls back on its own
+if the boot check fails.
+
+## PS5 on the wall
+
+Ready for GTA VI night without running an HDMI cable across the room: your PS5 stays plugged into the TV and streams to
+the projector over Wi-Fi with Remote Play.
+
+- **App.** Sony's PS Remote Play app may not run on no-name projectors (on the X5 it crashed in the projector's keystore
+  check). The open-source Chiaki client works: register it once with your PSN account ID and the PIN from the PS5.
+- **Settings that worked on the X5.** 1080p, 60 fps, H264, bitrate 15000 to 30000. Pair a DualSense in Bluetooth
+  settings (hold PS and Create) and it drives the stream.
+- **Honest limits.** Remote Play is compressed video and tops out at 1080p. On a phone hotspot we logged about one broken
+  frame in eight, which shows up as smearing; the fix is the network, not the app. Put the PS5 and the projector on a
+  router (a cable for the PS5 helps most). For a picture identical to the TV, an HDMI splitter with a 1080p output to
+  the projector beats any stream.
 
 ## The home screen
 
@@ -157,15 +194,15 @@ tooling does the rest: back up the package list, disable telemetry, ad services 
 
 ## Credits
 
-Projector 2030 builds on [**cleanyourtv**](https://github.com/Gathin23/cleanyourtv) by [Gathin](https://github.com/Gathin23):
-the original debloat tools, the device lists and the launcher this project extends. If Projector 2030 helped, star the original too.
+CouchMode builds on [**cleanyourtv**](https://github.com/Gathin23/cleanyourtv) by [Gathin](https://github.com/Gathin23):
+the original debloat tools, the device lists and the launcher this project extends. If CouchMode helped, star the original too.
 
 This fork adds projector support, the brand tiles and focus motion, the screensaver fix, the light cue, the
 maintenance and recovery tools, and the Sony A1 and XNANO X5 lists.
 
 ## Disclaimer
 
-Projector 2030 is an independent project. It is not affiliated with or endorsed by Apple, Sony, Netflix, Google or Govee.
+CouchMode is an independent project. It is not affiliated with or endorsed by Apple, Sony, PlayStation, Rockstar Games, Netflix, Google, Anthropic, OpenAI or Govee.
 Product names are used only to describe compatibility.
 
 ## License
