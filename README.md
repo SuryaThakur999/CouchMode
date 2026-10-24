@@ -5,7 +5,7 @@
 <h1 align="center">CouchMode</h1>
 <p align="center"><em>paste one prompt, get a home cinema.</em></p>
 
-<h3 align="center">Claude sets up your TV, projector and PS5 over Wi-Fi. You stay on the couch.</h3>
+<h3 align="center">A 160-inch, ad-free home cinema on your wall. Claude sets it up over Wi-Fi while you stay on the couch.</h3>
 
 <p align="center">
   Open Claude Code, paste the prompt below, and it strips the bloat, installs an Apple TV-inspired home screen,
@@ -21,9 +21,21 @@
   <a href="#how-it-works"><img alt="No root" src="https://img.shields.io/badge/root-not%20needed-ff2d2d?style=for-the-badge&labelColor=0a0a0a"></a>
 </p>
 
-<p align="center"><sub><a href="#let-claude-do-it">Let Claude do it</a> · <a href="#support-couchmode">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#ps5-on-the-wall">PS5</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
+<p align="center"><sub><a href="#what-you-get">What you get</a> · <a href="#let-claude-do-it">Let Claude do it</a> · <a href="#support-couchmode">Support</a> · <a href="#what-changed">What changed</a> · <a href="#quick-start">Quick start</a> · <a href="#projectors">Projectors</a> · <a href="#ps5-on-the-wall">PS5</a> · <a href="#the-home-screen">Home screen</a> · <a href="#netflix-light-cue">Light cue</a> · <a href="#keeping-it-fast">Keeping it fast</a> · <a href="#how-it-works">How it works</a> · <a href="#credits">Credits</a></sub></p>
 
 ---
+
+## What you get
+
+- **A screen as big as your wall.** Up to a 160-inch picture in Full HD (1080p) on a projector like the XNANO X5.
+  How big still looks sharp depends on your projector and how dark the room is; our 400-lumen X5 looks best at around 90 inches in a dark room.
+- **No ads.** The home screen shows your apps and nothing else. No banners, no "recommended for you" rows.
+- **Faster and calmer.** We switched off the junk that runs in the background. Our Sony TV went from about 250 MB to about 510 MB of free memory, so it stops choking.
+- **Looks like an Apple TV.** Big tiles that lift up when you move onto them, a clock and the date, a clean dock.
+- **Make it yours.** Pick which apps sit in the dock, how many tiles per row and the wallpaper. No coding needed.
+- **PS5 on the wall.** Play on the big screen while the PS5 stays plugged into your TV. No long HDMI cable.
+- **The room goes dark when Netflix starts.** Optional: a Govee bulb flashes red and turns off.
+- **Undo any time.** Nothing is deleted. One command puts everything back.
 
 ## Let Claude do it
 
